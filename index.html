@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio – Amirhossein Vahdati</title>
   <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="Logo" style="height: 60px; display: block; margin: 0 auto 1rem;">
-    <h1>Amirhossein Vahdati</h1>
-    <p>Étudiant en informatique appliquée & passionné par l'IA</p>
+  <header class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <img src="profile.jpg" alt="Photo de profil" class="profile-pic">
+      <h1>Amirhossein Vahdati</h1>
+      <p>Étudiant en informatique appliquée & passionné par l'IA</p>
+    </div>
   </header>
 
   <nav>
     <ul>
-      <li><a href="#accueil">Accueil</a></li>
       <li><a href="#competences">Compétences</a></li>
       <li><a href="#projets">Projets</a></li>
       <li><a href="#formation">Formation</a></li>
@@ -24,51 +26,47 @@
     </ul>
   </nav>
 
-  <section id="accueil">
-    <h2>Bienvenue</h2>
-    <p>Je suis Amirhossein Vahdati, étudiant passionné par l’intelligence artificielle, le machine learning et les solutions numériques responsables.</p>
-  </section>
+  <main>
+    <section id="competences">
+      <h2>Compétences</h2>
+      <ul>
+        <li>Python, C++, Java</li>
+        <li>PyTorch, TensorFlow, scikit-learn</li>
+        <li>Docker, Kubernetes, Git</li>
+        <li>SQL, MongoDB</li>
+        <li>Français, Anglais, Italien, Allemand, Persan</li>
+      </ul>
+    </section>
 
-  <section id="competences">
-    <h2>Compétences</h2>
-    <ul>
-      <li>Python, C++, Java</li>
-      <li>PyTorch, TensorFlow, scikit-learn</li>
-      <li>Docker, Kubernetes, Git</li>
-      <li>SQL, MongoDB</li>
-      <li>Français, Anglais, Italien, Allemand, Persan</li>
-    </ul>
-  </section>
+    <section id="projets">
+      <h2>Projets</h2>
+      <ul>
+        <li><strong>NLP Médical</strong> – Extraction d'information à partir de textes cliniques</li>
+        <li><strong>Portfolio personnel</strong> – Ce site web</li>
+        <li><strong>Modèle IA biomédical</strong> – Prédiction avec PyTorch</li>
+      </ul>
+    </section>
 
-  <section id="projets">
-    <h2>Projets</h2>
-    <ul>
-      <li><strong>Analyse de texte médical avec NLP</strong> – extraction d'information à partir de dossiers cliniques</li>
-      <li><strong>Portfolio personnel</strong> – ce site web !</li>
-      <li><strong>Modèle de prédiction</strong> – classification de données biomédicales avec PyTorch</li>
-    </ul>
-  </section>
+    <section id="formation">
+      <h2>Formation & Expériences</h2>
+      <p><strong>Université de Milan</strong> – Doctorat en Médecine (en cours)</p>
+      <p><strong>Université de Téhéran</strong> – Licence en Langue et Littérature Italiennes</p>
+      <p>Enseignant en sciences, langues et data science depuis 2020</p>
+    </section>
 
-  <section id="formation">
-    <h2>Formation & Expériences</h2>
-    <p><strong>Université de Milan</strong> – Doctorat en Médecine (en cours)</p>
-    <p><strong>Université de Téhéran</strong> – Licence en Langue et Littérature Italiennes</p>
-    <p><strong>Université de Téhéran</strong> – Licence en Biotechnologie</p>
-    <p>Enseignant en sciences, langues et data science depuis 2020</p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <form action="https://formspree.io/f/xeokdpnr" method="POST">
-      <label>Nom:<br /><input type="text" name="name" required></label><br />
-      <label>Email:<br /><input type="email" name="email" required></label><br />
-      <label>Message:<br /><textarea name="message" required></textarea></label><br />
-      <button type="submit">Envoyer</button>
-    </form>
-  </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <form action="https://formspree.io/f/xeokdpnr" method="POST">
+        <input type="text" name="name" placeholder="Votre nom" required>
+        <input type="email" name="email" placeholder="Votre email" required>
+        <textarea name="message" placeholder="Votre message" required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 Amirhossein Vahdati</p>
+    <p>&copy; 2025 Amirhossein Vahdati | Tous droits réservés</p>
   </footer>
 </body>
 </html>
